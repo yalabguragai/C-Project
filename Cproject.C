@@ -1,0 +1,114 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+int main(void)
+{
+int gd=DETECT,gm;
+int i,j=0;
+initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+for(i=0;i<500;i=i+10)
+{
+/*train structure*/
+setcolor(6);
+line(300+i,250,300+i,300);
+line(100+i,250,300+i,250);
+line(300+i,300,100+i,300);
+line(100+i,250,100+i,300);
+setcolor(6);
+outtextxy(120+i,280,"Hogwarts express");
+/*Window*/
+setcolor(LIGHTBLUE);
+rectangle(105+i,255,125+i,265);
+rectangle(130+i,255,150+i,265);
+rectangle(155+i,255,175+i,265);
+rectangle(180+i,255,200+i,265);
+rectangle(205+i,255,225+i,265);
+rectangle(230+i,255,250+i,265);
+rectangle(255+i,255,275+i,265);
+rectangle(280+i,255,295+i,265);
+      /*window color*/
+setfillstyle(HATCH_FILL,RED);
+floodfill(106+i,260,LIGHTBLUE);
+setfillstyle(HATCH_FILL,RED);
+floodfill(131+i,260,LIGHTBLUE);
+setfillstyle(HATCH_FILL,RED);
+floodfill(156+i,260,LIGHTBLUE);
+setfillstyle(HATCH_FILL,RED);
+floodfill(181+i,260,LIGHTBLUE);
+setfillstyle(HATCH_FILL,RED);
+floodfill(206+i,260,LIGHTBLUE);
+setfillstyle(HATCH_FILL,RED);
+floodfill(231+i,260,LIGHTBLUE);
+setfillstyle(HATCH_FILL,RED);
+floodfill(256+i,260,LIGHTBLUE);
+setfillstyle(HATCH_FILL,RED);
+floodfill(281+i,260,LIGHTBLUE);
+setcolor(6);
+     for(j=0;j<500;j=j+30)
+	  {
+	     setcolor(6);
+	     arc(100+i,320,0+j,180+j,20);
+	     arc(300+i,320,0+j,180+j,20);
+	     setcolor(6);
+	     arc(100+i,320,0+j,180+j,20);
+	     arc(300+i,320,180+j,360+j,20);
+	     /*train leak*/
+	     line(90,345,800,345);
+	     line(90,325,800,325);
+	     line(105,325,100,345);
+	     line(125,325,120,345);
+	     line(145,325,140,345);
+	     line(165,325,160,345);
+	     line(185,325,180,345);
+	     line(205,325,200,345);
+	     line(225,325,220,345);
+	     line(245,325,240,345);
+	     line(265,325,260,345);
+	     line(285,325,280,345);
+	     line(305,325,300,345);
+	     line(325,325,320,345);
+	     line(345,325,340,345);
+	     line(365,325,360,345);
+	     line(385,325,380,345);
+	     line(405,325,400,345);
+	     line(425,325,420,345);
+	     line(445,325,440,345);
+	     line(465,325,460,345);
+	     line(485,325,480,345);
+	     line(505,325,500,345);
+	     line(525,325,520,345);
+	     line(545,325,540,345);
+	     line(565,325,560,345);
+	     line(585,325,580,345);
+	     line(605,325,600,345);
+	     line(625,325,620,345);
+	     line(645,325,640,345);
+	     line(665,325,660,345);
+	     line(265,325,260,345);
+	      line(265,325,260,345);
+		delay(10);
+		//cleardevice();
+		//circle(300+i,170,20);
+		setcolor(BLUE);
+line(40,200,140,20);
+line(140,20,280,200);
+line(250,160,350,30);
+line(350,30,490,200);
+line(455,160,600,30);
+line(600,30,800,200);
+line(35,200,800,200);
+	    /*mountain color*/
+setfillstyle(SOLID_FILL,WHITE);
+floodfill(140,30,BLUE);
+setfillstyle(SOLID_FILL,WHITE);
+floodfill(350,40,BLUE);
+setfillstyle(SOLID_FILL,WHITE);
+floodfill(610,50,BLUE);
+		}
+	delay(10);
+	  cleardevice();
+	  }
+getch();
+closegraph();
+return 0;
+}
